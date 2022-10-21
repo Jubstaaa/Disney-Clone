@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-[#040714] text-[#f9f9f9] font-montserrat scrollbar-hide;
+  }
+}
+
+@layer components {
+  .header {
+    @apply sticky bg-[#040714] top-0 z-[1000] flex px-10 items-center h-[72px] md:px-12;
+  }
+
+  .header-link {
+    @apply flex items-center space-x-2 cursor-pointer;
+  }
+
+  .span {
+    @apply relative uppercase text-sm font-medium before:bg-[#f9f9f9] before:rounded-bl before:-bottom-1.5 before:h-0.5 before:inset-x-0 before:absolute before:transform before:origin-left before:scale-x-0 before:transition-all before:duration-200 group-hover:before:scale-x-100 ease-menu;
+  }
+
+  .brand {
+    @apply flex relative  w-[250px] h-[170px] md:w-[330px] md:h-[210px] min-w-[250px] min-h-[170px] md:min-w-[330px] md:min-h-[210px] rounded-lg overflow-hidden shadow-xl cursor-pointer border-[3px] border-[#f9f9f9] border-opacity-10 hover:border-opacity-80 hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-menu;
+  }
+
+  .mainPage {
+    @apply relative min-h-screen after:bg-home after:bg-center after:bg-cover after:bg-no-repeat after:bg-fixed after:absolute after:inset-0 after:z-[-1];
+  }
+
+  .thumbnail {
+    @apply flex min-w-[250px] min-h-[170px] md:min-w-[330px] md:min-h-[210px] rounded-lg overflow-hidden shadow-xl cursor-pointer border-[3px] border-[#f9f9f9] border-opacity-10 hover:border-opacity-80 hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-menu;
+  }
+
+  .collection {
+    @apply flex space-x-6 overflow-y-hidden overflow-x-scroll scrollbar-hide p-2 -m-2;
+  }
+
+  .section {
+    @apply relative flex flex-col space-y-2 my-10 px-8;
+  }
+
+  .contextButton {
+    @apply text-xs md:text-base  flex items-center justify-center py-2.5 px-6 rounded hover:bg-[#c6c6c6] transition duration-500;
+  }
+}
+
+@tailwind utilities;
+
+.control-dots {
+  left: 30%;
+}
+
+.brand:hover > span > img {
+  background: transparent !important;
+}
