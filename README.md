@@ -3,7 +3,7 @@
 ![Imgur](https://i.imgur.com/87bBXeY.jpg)
 
 > Click to view live demo
-> (https://dplus-clone-oop7h3ipo-jubstaaa.vercel.app/)
+> (https://dplus-clone.vercel.app/)
 
 ## Techs I Used
 
